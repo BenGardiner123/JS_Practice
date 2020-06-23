@@ -60,3 +60,30 @@ switch(true) {
         console.log(firstName + ' is an older man.');
 }
 
+
+///arrow functions----------------.-.-.-.-.-.-.-.-.-.-...............----------------
+
+///single line no arguments (Anon function)
+
+let doThis = () => console.log("Victory!")
+
+doThis();
+
+///single line with one arguments
+
+let doThat = d => d * 17;
+
+console.log(doThat(6));
+
+
+///multi line with arguments
+
+let Boxer = (wins, losses) => {
+    let record = wins > losses;
+    var isGood = (record) ? "i win a lot" : "i lose a lot - my name is probably gordo";
+   console.log(isGood);
+}
+
+Boxer(1, 5);
+
+////want to do more work on this these are cool AF.
