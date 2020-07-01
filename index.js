@@ -158,7 +158,7 @@ JayJay["lastName"] = "Gardiner";
 console.log(JayJay);
  */
 
-var Ben = {
+/* var Ben = {
     fisrtName: 'Ben',
     lastName: "Gardiner",
     birtYear: 1990, // can put difernt types here.
@@ -177,5 +177,6 @@ Ben.numberOfGyms = Ben.calcGyms();
 console.log(Ben);
 Ben.boxingGyms.push("Team ASF - Singapore");
 Ben.numberOfGyms = Ben.calcGyms(); 
-console.log(Ben);
+console.log(Ben); */
+
 
