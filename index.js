@@ -162,12 +162,20 @@ var Ben = {
     fisrtName: 'Ben',
     lastName: "Gardiner",
     birtYear: 1990, // can put difernt types here.
-    boxingGyms: ['Sityodtong', 'WMC Samui', 'Dominance Richmond', 'Singpatong', 'Sor.Vorapin'], // you can also put another object inside an array here.
+    boxingGyms: ["Sityodtong", "WMC Samui", "Dominance Richmond", "Singpatong", "Sor.Vorapin"], // you can also put another object inside an array here.
     job: 'Programmer',
     calcGyms: function() 
     {
-        return this.boxingGyms.length;
+        return this.boxingGyms.length; // using the this. here is imprtant - itmakes sure that the prgrma knwos we are talking about this exact instance of BoxingGyms.
     }
 }
+Ben.numberOfGyms = Ben.calcGyms(); 
+//console.log(Ben.calcGyms()); /// accesing the functinoinside the object here using dot notation.
 
-console.log(Ben.calcGyms()); /// accesing the functinoinside the object hereusing dot notation.
+/// now we can add this to the object doing this
+
+console.log(Ben);
+Ben.boxingGyms.push("Team ASF - Singapore");
+Ben.numberOfGyms = Ben.calcGyms(); 
+console.log(Ben);
+
