@@ -170,4 +170,4 @@ var Ben = {
     }
 }
 
-console.log(Ben.calcGyms());
+console.log(Ben.calcGyms()); /// accesing the functinoinside the object hereusing dot notation.
