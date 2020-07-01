@@ -1,4 +1,4 @@
-/* var firstName= "John";
+/* /* var firstName= "John";
 var civilStatus = "single";
 
 if (civilStatus === 'married') {
@@ -7,7 +7,7 @@ if (civilStatus === 'married') {
     console.log(firstName + " hopes to marry soon")
 }; */
 
-
+/* 
 var firstName= "John";
 var age = 22;
 
@@ -85,7 +85,7 @@ let Boxer = (wins, losses) => {
 }
 
 Boxer(1, 5);
-
+ */
 ////want to do more work on this these are cool AF.
 
 
@@ -93,7 +93,7 @@ Boxer(1, 5);
 
 //-0-0-0-0-0-0-  This is function declaration
 
-function whatdoYouDo (job, firdName) {};
+/* function whatdoYouDo (job, firdName) {};
 
 // =-=-=-=-=-=-=-   this is a function expression
 
@@ -125,8 +125,49 @@ bennyg.shift() //removes the first element of the array.
 var isBoxertype = bennyg.indexOf("drunken boxing") === -1 ?  "Ben is not a drunken boxer" : "Ben is a drunken boxer";
 
 console.log(isBoxertype)
+ */
 
+//// objects and properties //////
 
+///Key Value pairs
 
+///using the OBJECT literal to create our object
 
+/* var Ben = {
+    fisrtName: 'Ben',
+    lastName: "Gardiner",
+    birtYear: 1990, // can put difernt types here.
+    boxingGyms: ['Sityodtong', 'WMC Samui', 'Dominance Richmond', 'Singpatong', 'Sor.Vorapin'], // you can also put another object inside an array here.
+    job: 'Programmer',
+}
 
+// to retreive the element by key name you can use the brackets like this..
+
+console.log(Ben['boxingGyms']);
+var x = 'job';
+//then pass it in like this...
+console.log(Ben[x]);
+
+///another way to create an object using the New object syntax
+
+var JayJay = new Object();
+///then fill it up using dot notation
+JayJay.name = "JAyJay";
+JayJay.birtYear = "18882";
+JayJay["lastName"] = "Gardiner";
+console.log(JayJay);
+ */
+
+var Ben = {
+    fisrtName: 'Ben',
+    lastName: "Gardiner",
+    birtYear: 1990, // can put difernt types here.
+    boxingGyms: ['Sityodtong', 'WMC Samui', 'Dominance Richmond', 'Singpatong', 'Sor.Vorapin'], // you can also put another object inside an array here.
+    job: 'Programmer',
+    calcGyms: function() 
+    {
+        return this.boxingGyms.length;
+    }
+}
+
+console.log(Ben.calcGyms());
