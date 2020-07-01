@@ -87,3 +87,46 @@ let Boxer = (wins, losses) => {
 Boxer(1, 5);
 
 ////want to do more work on this these are cool AF.
+
+
+/////Functions statements Vs Function Expressions
+
+//-0-0-0-0-0-0-  This is function declaration
+
+function whatdoYouDo (job, firdName) {};
+
+// =-=-=-=-=-=-=-   this is a function expression
+
+var whatdoyouDo = function(job, firstName) {
+        switch(job) {
+            case "Teacher":
+                return firstName + "Teaches kids how to code"; /// no need to break here because we used the return keyword - after it returns the output it ends the function and back to where we called this functionl
+            case "driver":
+                return firstName + " Drives a car";
+            case "Designer":
+                return firstName + " Designs stuff";
+            case "Boxer":
+                return firstName + " Boxes things";
+            defualt:
+                return firstName + " Does something else";
+        }
+}
+
+console.log(whatdoyouDo('driver', 'Ben'));
+
+//JS arrays stuff
+var bennyg = ['Boxing', "Muay Thai", "Jiu-Jitsu"];
+
+bennyg.push('Escrima'); //// this adds to the end of the list
+bennyg.unshift('MR.'); //adds to the start of the list.
+bennyg.pop(); ///removes the last index of the array.
+bennyg.shift() //removes the first element of the array.
+
+var isBoxertype = bennyg.indexOf("drunken boxing") === -1 ?  "Ben is not a drunken boxer" : "Ben is a drunken boxer";
+
+console.log(isBoxertype)
+
+
+
+
+
